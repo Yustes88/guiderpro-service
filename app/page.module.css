@@ -18,3 +18,9 @@
     gap: 2rem;
   }
 }
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 25px;
+  }
+}

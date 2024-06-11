@@ -58,6 +58,5 @@
 
 @media (max-width: 770px) {
   .container {
-    flex: 1;
   }
 }
