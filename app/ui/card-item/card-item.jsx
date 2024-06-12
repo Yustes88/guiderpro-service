@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from './styles.module.css'
 import {useState} from 'react'
 import Modal from '../modal/modal'
+import Button from '../button/button'
 
 export default function CardItem({card}) {
   const [showDetails, setShowDetails] = useState(false)
@@ -21,12 +22,12 @@ export default function CardItem({card}) {
 
       <div className={styles.description}>
         <div>{card.description}</div>
-        <button
+        <Button
           className={`${styles.button} ${showDetails ? 'modal' : ''}`}
           onClick={handleClick}
         >
           Подробнее &#8594;
-        </button>
+        </Button>
       </div>
 
       {showDetails && (

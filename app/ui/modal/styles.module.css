@@ -8,10 +8,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 
 .modalContent {
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
+}
+
+.button {
+  all: unset;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2b4074;
+  font-size: 14px;
+}
+
+.button:focus {
+  outline: revert;
 }
