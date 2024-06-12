@@ -1,8 +1,26 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+}
+
+.container {
+  margin: 5rem auto;
+  max-width: 1140px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: baseline;
+  padding: 63px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    align-items: end;
+    padding: 42px;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 25px;
+  }
 }
